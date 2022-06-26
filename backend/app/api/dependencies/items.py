@@ -27,6 +27,7 @@ def get_items_filters(
     offset: int = Query(DEFAULT_ITEMS_OFFSET, ge=0),
 ) -> ItemsFilters:
     return ItemsFilters(
+        title=title,
         tag=tag,
         seller=seller,
         favorited=favorited,
