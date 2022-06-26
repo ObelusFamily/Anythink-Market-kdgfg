@@ -31,6 +31,7 @@ services:
     environment:
       - NODE_ENV=development
       - PORT=3001
+      - REACT_APP_BACKEND_URL=https://anythink-market-kdgfg-api.herokuapp.com/
     working_dir: /usr/src
     volumes:
       - ./:/usr/src/
